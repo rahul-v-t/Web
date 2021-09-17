@@ -1,0 +1,843 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	background: transparent;
+	font-weight: normal;
+	text-decoration: none;
+	outline: none;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+ol, ul {
+	list-style: none;
+}
+del {
+	text-decoration: line-through;
+}
+body {
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-size: 17px;
+	color: #000;
+	overflow-x: hidden;
+	min-width: 320px;
+	font-weight: 500;
+}
+input,textarea,select{
+	font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+	font-weight: 500;
+}
+
+a{
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+}
+.thumb{
+	display: block;
+}
+.thumb img{
+	display: block;
+	width:100%;
+}
+p{
+	line-height:1.6em;
+	font-size: 16px;
+	font-family: "GT-Eesti", Arial;
+	font-weight: 500;
+	color: #000;
+}
+.hidden{
+	display:none;
+}
+br.clear {
+	clear: both;
+	line-height: 0;
+}
+.wrapper {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1200px;
+}
+.flex-wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+    font-weight: 600;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'GT-Eesti';
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+    src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"), url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal
+}
+::placeholder {
+  color: #9B9B9B;
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  color: #9B9B9B;
+}
+
+::-ms-input-placeholder {
+  color: #9B9B9B;
+}
+#main{
+    background: url("../images/banner-bg.png") no-repeat;
+    background-position: top right;
+}
+#main header{ 
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 18px;
+}
+#main header div.left{  
+    width: 40%;
+}
+#main header div.left h1{  
+    
+}
+#main header div.left h1 a{  
+    font-size: 32px;
+    font-weight: 800;
+}
+#main header div.right{  
+    width: 90%;
+    margin-right: 315px;
+}
+#main header div.right nav{  
+    background: #ffff;
+}
+#main header div.right nav ul{  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 8px;
+}
+#main header div.right nav ul li{  
+   
+}
+#main header div.right nav ul li:last-child{
+    
+}
+#main header div.right nav ul li a{ 
+    color: #bbbbbb; 
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+#main header div.right nav ul li a:hover{
+    color: #f5a741;
+}
+#main div.spotlight{
+    padding: 250px 0;
+}
+#main div.spotlight h2{
+    font-size: 55px;
+    font-weight: 800;
+    width: 48%;
+
+}
+#main div.spotlight h2 span{
+    font-size: 55px;
+    font-weight: 800;
+    color: #f5a741;
+    text-transform: uppercase;
+}
+#main div.spotlight p{
+    font-size: 18px;
+    font-weight: 600;
+    width: 52%;
+    color: rgb(187, 187, 187);
+    padding: 30px 0;
+}
+#main div.spotlight p a{
+    color: #449df8;
+}
+#main div.spotlight a.button{
+    text-align: center;
+    padding: 12px 24px;
+    background: #f5a741;
+    color: #ffffff;
+    border-radius: 23px;
+    font-size: 18px;
+    font-weight: 600;
+}
+#about{
+    width:100%;
+	padding: 100px 0;
+    position: relative;
+    width:100%;
+    padding:50px 0;
+    background: url("../images/left-bg-decor.png") no-repeat;
+    background-position: bottom left;
+}
+#about section.top{
+
+}
+#about section.top ul.top{
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items:center;
+}
+#about section.top ul li{
+    width:30%;
+	padding: 100px 30px;
+	text-align:center;
+	box-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	border-radius: 5px;
+	position: relative;
+	transition-duration: 0.8s;
+	
+}
+#about section.top ul li div::before{
+    content: "01";
+    position: absolute;
+    top: 4px;
+    left: 50px;
+    font-size: 130px;
+    font-weight: 600;
+    color: #fdefe9;
+    z-index: -1;
+}
+#about section.top ul li:nth-child(2) div::before{
+    content: "02";
+}
+#about section.top ul li:nth-child(3) div::before{
+    content: "03";
+}
+#about section.top ul li div img{
+    display: inline-block;
+	margin-bottom: 20px;
+
+}
+#about section.top ul li h4{
+    font-size:20px;
+	font-weight:600;
+	margin-bottom:20px;
+}
+#about section.top ul li p{
+    font-size: 16px;
+	color:#b3b3b3;
+	margin-bottom: 30px;
+}
+#about section.top ul li a.button{
+    padding: 10px 20px;
+	border: none;
+	border-radius: 30px;
+	background-color:#f1813f;
+    color:#ffff;
+    font-size: 16px;
+    font-weight: 600;
+}
+#about section.bottom{
+    margin: 160px 0;
+    display:flex;
+	justify-content:space-between;
+	align-items:center;
+}
+#about section.bottom div.left{
+    width: 40%;
+}
+#about section.bottom div.left img{
+    width: 100%;
+	display:block;
+}
+#about section.bottom div.right{
+    width:53%;
+}
+#about section.bottom div.right ul{
+
+}
+#about section.bottom div.right ul li {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-bottom: 80px;
+}
+#about section.bottom div.right ul li div.image_container{
+    width: 30%;
+}
+#about section.bottom div.right ul li div.image_container img{
+    display: block;
+    width: 100%;
+}
+#about section.bottom div.right ul li div.content{
+    padding-left: 20px;
+}
+#about section.bottom div.right ul li div.content h4{
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+#about section.bottom div.right ul li div.content p{
+    color: #bbbbbb; 
+}
+#about section.bottom div.right ul li div.content a{
+    color: #449df8;
+}
+#testimonials{
+    margin-bottom: 100px;
+}
+#testimonials h3{
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+#testimonials h3 span{
+    font-size: 48px;
+    font-weight: 600;
+    color: #f5a741;
+}
+#testimonials p{
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 10px;
+    color: #bbbbbb; 
+}
+#testimonials div.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#testimonials div.content ul{
+	margin:0 auto;
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+    padding: 90px 70px;
+}
+#testimonials div.content ul li{
+    width: 50%;
+	text-align: center;
+	margin-right: 30px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#testimonials div.content ul li div.item{
+    background:linear-gradient(to bottom, #f07b44 , #ee5966);
+    width: 95%;
+    margin: 0 auto;
+    position: relative;
+    padding: 30px;
+}
+#testimonials div.content ul li div.item div.round{
+    width: 32%;
+    position: absolute;
+    top: -21%;
+    left: -10%;
+}
+#testimonials div.content ul li div.item span{
+    color: #ffff;
+}
+#testimonials div.content ul li div.item div.round img{
+    display: block;
+    width: 100%;
+}
+#testimonials div.content ul li div.item h4{
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffff;
+    padding: 20px 0;
+}
+#testimonials div.content ul li div.item p{
+    width: 90%;
+}
+#testimonials div.content ul li div.item div.left{
+   
+    width: 30%;
+}
+#testimonials div.content ul li div.item div.right{
+    
+
+}
+#testimonials div.content div.right{
+    position: relative;
+}
+#testimonials div.content div.right div.one{
+    background:linear-gradient(to bottom, #f07b44 , #ee5966);
+    padding: 40px;
+    border-radius: 10px;
+}
+#testimonials div.content div.right div.one:hover{
+    cursor: pointer;
+}
+#testimonials div.content div.right div.two:hover{
+    cursor: pointer;
+}
+#testimonials div.content div.right div span{
+    color: #ffffff;
+}
+#testimonials div.content div.right div.two{
+    background:linear-gradient(to bottom, #f07b44 , #ee5966);
+    position: absolute;
+    left: 64%;
+    top: 76%;
+    padding: 40px;
+    border-radius: 10px;
+}
+#form{
+    background: url("../images/footer-bg.png") no-repeat;
+    background-size: cover;
+}
+#form div.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 95px;
+}
+#form div.content div.left{
+    width: 100%;
+}
+#form div.content div.left div.box{
+    width: 100%;
+    background: #ffffff;
+    padding: 60px;
+    border-radius: 8px;
+    box-shadow: rgb(0 0 0 / 20%) 0px 4px 8px 0px;
+}
+#form div.content div.left div.box form{
+    text-align: center;
+    padding: 40px;
+}
+#form div.content div.left div.box form input[type="text"]{
+    padding: 10px 10px;
+	border-radius: 5px;
+	width: 48%;
+	background-color:  #f5f5f5;
+}
+#form div.content div.left div.box form input[type="email"]{
+    padding: 10px 10px;
+	border-radius: 5px;
+	width: 48%;
+	background-color:  #f5f5f5;
+}
+#form div.content div.left div.box form textarea{
+    width: 100%;
+	background-color:  #f5f5f5;
+	padding: 10px 10px;
+    margin-bottom: 40px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#form div.content div.left div.box form a.button{
+    display: block;
+    text-align: center;
+    padding: 10px 20px;
+	border: none;
+	border-radius: 30px;
+	background-color:#f1813f;
+    color:#ffff;
+    font-size: 14px;
+    font-weight: 600;
+    width: 85%;
+    margin: 0 auto;
+
+}
+#form div.content div.right{
+    width: 100%;
+    margin-left: 30px;
+}
+#form div.content div.right h3{
+    font-size: 50px;
+    font-weight: 600;
+    color: #ffffff;
+}
+#form div.content div.right h3 span{
+    font-size: 50px;
+    font-weight: 600;
+    color: #f5a741;
+    
+}
+#form div.content div.right p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    padding: 30px 0;
+    text-align: left;
+}
+#form div.content div.right ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+#form div.content div.right ul li{
+    border: 1px solid #ffff;
+    border-radius: 50%;
+    padding: 8px;
+    text-align: center;
+}
+#form div.content div.right ul li a{
+    color: #ffffff;
+}
+#form div.content div.right ul li a span{
+
+}
+#form hr.line{
+    border-bottom: 1px dotted #ffff;
+    margin: 80px;
+}
+#form footer p{
+    text-align: center;
+    padding: 30px 0;
+    color: #ffffff;
+}
+#form footer a{
+    color: #ffffff;
+}
+@media all and (max-width:1280px){
+    #about section.bottom div.right ul li div.image_container{
+        width: 40%;
+    }
+    #form div.content{
+        padding-top: 225px;
+    }
+    #testimonials section.wrapper{
+        width: 87%;
+    }
+}
+@media all and (max-width:1080px){
+    #main{
+        background-size: 70%;
+    }
+    #main div.spotlight {
+        padding: 120px 0;
+    }
+    #main div.spotlight h2{
+        width: 60%;
+    }
+    #testimonials div.content ul li div.item div.round{
+        top: -18%;
+    }
+    #form div.content {
+        padding-top: 270px;
+    }
+    #form div.content div.right ul li{
+        padding: 5px;
+    }
+    #form footer p{
+        padding: 15px 0;
+    }
+}
+@media all and (max-width:980px){
+    #main{
+        background: none;
+    }
+    #main header div.right{
+        margin-right: 0%;
+    }
+    #main div.spotlight {
+        padding: 100px;
+    }
+    #main div.spotlight h2{
+        width: 100%;
+    }
+    #main div.spotlight p{
+        width: 70%;
+    }
+    #about section.top ul.top{
+        flex-wrap: wrap;
+    }
+    #about section.top ul li{
+        width: 48%;
+    }
+    #about section.bottom div.right ul li div.image_container{
+        width: 80%;
+    }
+    #testimonials section.wrapper{
+        width: 100%;
+    }
+    #testimonials h3{
+        font-size: 38px;
+    }
+    #testimonials h3 span{
+        font-size: 38px;
+    }
+    #testimonials div.content{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    #testimonials div.content ul{
+        width: 100%;
+    }
+    #form div.content{
+        flex-wrap: wrap;
+    }
+    #form div.content div.right{
+        margin-left: 0%;
+        margin-top: 30px;
+    }
+}
+@media all and (max-width:768px){
+    #main div.spotlight h2{
+        font-size: 40px;
+    }
+    #main div.spotlight h2 span{
+        font-size: 40px;
+    }
+    #main div.spotlight p{
+        font-size: 14px;
+        width: 100%;
+    }
+    #main div.spotlight a.button{
+        font-size: 14px;
+    }
+    #about section.top ul li{
+        width: 90%;
+        margin-top: 20px;
+    }
+    #about section.top ul li {
+        width: 90%;
+        margin-top: 20px;
+    }
+    #about{
+        background: none;
+    }
+    #about section.bottom section.wrapper{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #about section.bottom div.left{
+        width: 60%;
+        margin-bottom: 40px;
+    }
+    #about section.bottom div.right{
+        width: 75%;
+    }
+    #about section.bottom {
+        flex-wrap: wrap;
+        margin: 60px 0;
+    }
+    #testimonials p{
+        width: 70%;
+    }
+    #testimonials div.content div.right{
+       transform: translate(-50%);
+    }
+    #testimonials div.content div.right div.one{
+        padding: 20px;
+    }
+    #testimonials div.content div.right div.two{
+        padding: 20px;
+        left: 115%;
+        top: 0%;
+    }
+    #testimonials div.content ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #testimonials div.content ul li{
+        width: 90%;
+        margin-right: 0%;
+        margin-top: 100px;
+    }
+    #testimonials div.content ul li:nth-child(2){
+        display: none;
+    }
+    #testimonials div.content ul{
+        padding: 30px 70px;
+    }
+    #form div.content{
+        padding-top: 20px;
+    }
+    #form div.content div.left div.box{
+        padding: 0%;
+    }
+    #form div.content div.right{
+        margin-left: 0;
+        margin-top: 145px;
+    }
+    #form div.content div.right h3{
+        font-size: 40px;
+    }
+    #form div.content div.right h3 span{
+        font-size: 40px;
+    }
+    #form div.content div.right p{
+        font-size: 14px;
+    }
+    #form div.content div.right ul li{
+        border: none;
+    }
+}
+@media all and (max-width:640px){
+    #main header div.right nav{
+        display: none;
+    }
+    #main div.spotlight {
+        padding: 35px;
+    }
+    #main div.spotlight h2 {
+        font-size: 36px;
+    }
+    #main div.spotlight h2 span{
+        font-size: 36px;
+    }
+    #main div.spotlight p{
+        padding: 24px 0;
+    }
+    #about section.top ul li{
+        width: 100%;
+    }
+    #about section.bottom div.right {
+        width: 90%;
+    }
+    #about section.bottom div.right ul li div.content h4{
+        font-size: 24px;
+    }
+    #testimonials h3 {
+        font-size: 32px;
+    }
+    #testimonials h3 span {
+        font-size: 32px;
+    }
+    #testimonials p {
+        width: 90%;
+    }
+    #testimonials div.content ul li{
+        width: 100%;
+    }
+    #form div.content div.left div.box form a.button{
+        width: 100%;
+    }
+    #form div.content{
+        padding: 0 60px;
+    }
+    #form hr.line{
+        margin: 60px;
+    }
+}
+@media all and (max-width:480px){
+    #main div.spotlight h2 {
+        font-size: 28px;
+    }
+    #main div.spotlight h2 span {
+        font-size: 28px;
+    }
+    #about{
+        padding: 0%;
+    }
+    #testimonials h3 {
+        font-size: 28px;
+    }
+    #testimonials h3 span {
+        font-size: 28px;
+    }
+    #testimonials p {
+        width: 100%;
+    }
+    #testimonials div.content ul {
+        padding: 30px 35px;
+    }
+    #testimonials div.content ul li div.item p {
+        width: 100%;
+    }
+    #form div.content div.left div.box form {
+        padding: 16px;
+    }
+    #form div.content div.right {
+        margin-top: 285px;
+    }
+    #form div.content div.right h3 {
+        font-size: 36px;
+    }
+    #form div.content div.right h3 span {
+        font-size: 36px;
+    }
+    #form hr.line{
+        margin: 50px;
+    }
+    #form footer p {
+        padding: 15px 0;
+        width: 95%;
+    }
+}
+@media all and (max-width:360px){
+    #main header div.left h1 a{
+        font-size: 30px;
+    }
+    #main div.spotlight h2{
+        font-size: 25px;
+    }
+    #main div.spotlight h2 span{
+        font-size: 25px;
+    }
+    #about section.top ul.top{
+        width: 80%;
+    }
+    #about section.bottom div.right {
+        width: 95%;
+    }
+    #about section.bottom div.right ul li div.image_container{
+        display: none;
+    }
+    #testimonials h3 {
+        font-size: 24px;
+    }
+    #testimonials h3 span {
+        font-size: 24px;
+    }
+    #testimonials div.content ul li div.item{
+        width: 100%;
+    }
+    #testimonials div.content ul li div.item div.round{
+        width: 38%;
+    }
+    #testimonials p{
+        padding: 15px;
+    }
+    #form div.content {
+        padding: 0 32px;
+    }
+    #form div.content div.left div.box form {
+        padding: 10px;
+    }
+    #form div.content div.right h3 {
+        font-size: 32px;
+    }
+    #form div.content div.right h3 span{
+        font-size: 32px;
+    }
+    #form hr.line{
+        margin: 30px;
+    }
+    #form footer a{
+        font-size: 13px;
+    }
+    footer p {
+        font-size: 13px;
+    }
+}
